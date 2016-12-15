@@ -1,2 +1,3 @@
 https://www.html5rocks.com/es/tutorials/video/basics/
 http://www.w3schools.com/tags/ref_av_dom.asp
+http://stackoverflow.com/questions/7850970/responsive-html5-video-resolution
