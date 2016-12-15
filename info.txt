@@ -1,0 +1,2 @@
+https://www.html5rocks.com/es/tutorials/video/basics/
+http://www.w3schools.com/tags/ref_av_dom.asp

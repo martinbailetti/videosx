@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Videos</title>
+    <link href="videos.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="video-container">
+    <div class="video-overlay"></div>
+    <!--
+ preload="auto|metadata|none"
+    -->
+      <video id="video_player" preload="auto" poster="poster.jpg"  data-setup="{}">
+        <!--<source src="videos/caterpillar.mp4" type="video/mp4">-->
+    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+      </video>
+  </div>
+<script>
+
+
+
+  $(document).ready(function(){
+
+      $('.video-container').click(function(){
+
+            var video = $('#video_player').get(0);
+
+
+            if(video.paused){
+
+                video.play();
+
+            }else{
+
+                video.pause();
+
+            }
+        });
+
+        var vid = document.getElementById("video_player");
+
+        vid.oncanplay = function() {
+            console.info("Can start playing video");
+        };
+
+        vid.oncanplaythrough = function() {
+            console.info("Can start playing all video");
+        };
+
+});
+
+</script>
+
+</body>
+
+</html>
