@@ -17,14 +17,7 @@ video {
 }
 
 
-.video-info {
-  z-index: 3;
-  background-color: #000;
-  color: #FFF;
-  position: absolute;
-  top:50%;
-  left:50%;
-}
+
 .video-overlay {
   position: absolute;
   top: 0;
@@ -50,7 +43,6 @@ video, .ie8-poster {
 /*Contenedor*/
 .container{
 
-  background-color: rgba(255,255,255,.7);
   width:80%;
   margin-left: auto;
   margin-right: auto;
@@ -60,7 +52,6 @@ video, .ie8-poster {
 /*Cabecera*/
 .container.header{
 
-   padding:0px 0px;
   
 
 }
@@ -69,14 +60,12 @@ video, .ie8-poster {
 /*MENU*/
 
 #navegador{
-   padding-top:10px;
-   padding-bottom:1px;
 }
 
 #navegador ul{
-  display: block;
+    display: block;
    list-style-type: none;
-   text-align: center;
+   text-align: right;
    padding: 0px 0px;
    margin: 0px 0px;
 
@@ -84,14 +73,36 @@ video, .ie8-poster {
 #navegador li{
    display: inline;
    text-align: center;
-   margin: 0 10px 0 0;
+   margin: 0px 0px;
 }
 #navegador li a {
-   color: #666;
-   background-color: #eeeeee;
+  padding-left: 6px;
+  padding-right: 6px;
+   color: #fff;
+   background-color: #000;
    text-decoration: none;
+   border-right:1px solid #fff;
+   font-size: 24px;
 }
+#navegador li a.last {
+   border-right:none;
+}
+
 #navegador li a:hover{
-   background-color: #333333;
-   color: #ffffff;
+   background-color: #fff;
+   color: #000;
+}
+
+/*Contenido*/
+
+.container.container-content{
+
+  background-color: rgba(255,255,255,.7);
+  margin-top:40px;
+
+}
+
+.content{
+  padding:20px 20px;
+
 }
